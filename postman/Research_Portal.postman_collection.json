@@ -1,0 +1,267 @@
+{
+  "info": {
+    "name": "Research Opportunity Portal",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1a. Create opportunity (AI)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Machine Learning for Crop Disease\",\n  \"description\": \"Machine Learning for Crop Disease - a research project in Artificial Intelligence.\",\n  \"research_area\": \"Artificial Intelligence\",\n  \"faculty_name\": \"Dr. Ayesha Khan\",\n  \"department\": \"Computer Science\",\n  \"required_skills\": \"Python, PyTorch\",\n  \"positions\": 2,\n  \"deadline\": \"2026-12-15\",\n  \"status\": \"Open\"\n}"
+        }
+      }
+    },
+    {
+      "name": "1b. Create opportunity (Networks)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Secure IoT Protocols\",\n  \"description\": \"Secure IoT Protocols - a research project in Networking.\",\n  \"research_area\": \"Networking\",\n  \"faculty_name\": \"Dr. Imran Ali\",\n  \"department\": \"Computer Science\",\n  \"required_skills\": \"C, Networking basics\",\n  \"positions\": 3,\n  \"deadline\": \"2026-12-20\",\n  \"status\": \"Open\"\n}"
+        }
+      }
+    },
+    {
+      "name": "1c. Create opportunity (Data)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Urban Air Quality Analytics\",\n  \"description\": \"Urban Air Quality Analytics - a research project in Data Science.\",\n  \"research_area\": \"Data Science\",\n  \"faculty_name\": \"Dr. Sara Malik\",\n  \"department\": \"Software Engineering\",\n  \"required_skills\": \"Python, Statistics\",\n  \"positions\": 1,\n  \"deadline\": \"2027-01-10\",\n  \"status\": \"Open\"\n}"
+        }
+      }
+    },
+    {
+      "name": "2. Get all opportunities",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        }
+      }
+    },
+    {
+      "name": "3. Get one opportunity (id 1)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities/1",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "api",
+            "opportunities",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "4. Update opportunity (id 1)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities/1",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "api",
+            "opportunities",
+            "1"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"ML for Crop Disease Detection\",\n  \"positions\": 4,\n  \"required_skills\": \"Python, PyTorch, OpenCV\"\n}"
+        }
+      }
+    },
+    {
+      "name": "5. Close opportunity (id 2)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities/2",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "api",
+            "opportunities",
+            "2"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"status\": \"Closed\"\n}"
+        }
+      }
+    },
+    {
+      "name": "6. Delete opportunity (id 3)",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities/3",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "api",
+            "opportunities",
+            "3"
+          ]
+        }
+      }
+    },
+    {
+      "name": "7. Get deleted opportunity (expect 404)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities/3",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "api",
+            "opportunities",
+            "3"
+          ]
+        }
+      }
+    },
+    {
+      "name": "8. Invalid data (expect 400)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "localhost:3000"
+          ],
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"\",\n  \"positions\": -5,\n  \"status\": \"Maybe\"\n}"
+        }
+      }
+    }
+  ]
+}
