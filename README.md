@@ -4,7 +4,7 @@ A full-stack web app where faculty can post, view, update, close and delete rese
 
 **Stack:** Node.js + Express (REST API), MySQL, HTML/JavaScript + Bootstrap.
 
-**GitHub Repository:** https://github.com/YOUR-USERNAME/research-opportunity-portal
+**GitHub Repository:** https://github.com/Fatimahwaseem/research-opportunity-portal
 
 ## Project structure
 ```
