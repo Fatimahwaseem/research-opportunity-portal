@@ -1,0 +1,20 @@
+$kind: http-request
+url: http://localhost:3000/api/opportunities
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "title": "Secure IoT Protocols",
+      "description": "Secure IoT Protocols - a research project in Networking.",
+      "research_area": "Networking",
+      "faculty_name": "Dr. Imran Ali",
+      "department": "Computer Science",
+      "required_skills": "C, Networking basics",
+      "positions": 3,
+      "deadline": "2026-12-20",
+      "status": "Open"
+    }
+order: 2000

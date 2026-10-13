@@ -1,0 +1,20 @@
+$kind: http-request
+url: http://localhost:3000/api/opportunities
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "title": "Machine Learning for Crop Disease",
+      "description": "Machine Learning for Crop Disease - a research project in Artificial Intelligence.",
+      "research_area": "Artificial Intelligence",
+      "faculty_name": "Dr. Ayesha Khan",
+      "department": "Computer Science",
+      "required_skills": "Python, PyTorch",
+      "positions": 2,
+      "deadline": "2026-12-15",
+      "status": "Open"
+    }
+order: 1000

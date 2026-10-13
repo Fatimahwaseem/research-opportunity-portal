@@ -1,0 +1,13 @@
+# Use this workspace to collaborate
+workspace:
+  id: d65197e2-8aa0-4f34-8063-efef4d576f29
+
+localResources:
+  collections:
+    - ../Research Opportunity Portal
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/Research Opportunity Portal: 4525d727-7e98-4d80-a712-8badd82abee1

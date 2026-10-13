@@ -1,0 +1,20 @@
+$kind: http-request
+url: http://localhost:3000/api/opportunities
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "title": "Urban Air Quality Analytics",
+      "description": "Urban Air Quality Analytics - a research project in Data Science.",
+      "research_area": "Data Science",
+      "faculty_name": "Dr. Sara Malik",
+      "department": "Software Engineering",
+      "required_skills": "Python, Statistics",
+      "positions": 1,
+      "deadline": "2027-01-10",
+      "status": "Open"
+    }
+order: 3000

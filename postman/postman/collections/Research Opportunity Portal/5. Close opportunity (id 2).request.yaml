@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://localhost:3000/api/opportunities/2
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "status": "Closed"
+    }
+order: 7000

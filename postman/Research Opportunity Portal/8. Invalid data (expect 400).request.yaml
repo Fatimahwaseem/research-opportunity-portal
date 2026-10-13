@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:3000/api/opportunities
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "title": "",
+      "positions": -5,
+      "status": "Maybe"
+    }
+order: 10000
